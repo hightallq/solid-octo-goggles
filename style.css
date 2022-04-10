@@ -34,6 +34,10 @@ header{
     width: 150%;
 }
 
+.logo{
+    cursor: pointer;
+}
+
 @media (max-width:950px) {
     .logo{
         width: 300px;
