@@ -203,7 +203,30 @@ header a{
     }
 }
 
-.first, .sec, .third{
+@media (max-width:950px) {
+    .tetx{
+        font-size: 35px;
+    }
+}
+
+.third img{
+    max-width: 500px;
+}
+
+.fourth{
+    background-color: #fff;
+}
+
+.fourth img{
+    max-width: 600px;
+}
+
+.tex{
+    color: black;
+    text-align: center;
+}
+
+.first, .sec, .third, .fourth{
     display: flex;
     align-items: center;
     width: 158%;
@@ -212,8 +235,18 @@ header a{
 .contacts{
     text-align: center;
     width: 158%;
+    background-color: rgb(95, 85, 160);
+    color: #fff;
 }
 
+.contacts a{
+    text-decoration: none;
+}
+
+.contacts a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
 
 @media (max-width:950px) {
     .contacts{
