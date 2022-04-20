@@ -5,8 +5,15 @@ html{
 body{
     padding: 0;
     margin: 0;
-    width: 100%;
+    /* width: 100%; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
+}
+
+@media (max-width:650px){
+    .article{
+        flex-direction: column;
+    }
 }
 
 h1{
@@ -14,15 +21,27 @@ h1{
     font-size: 50px;
 }
 
-@media (max-width:950px) {
+@media (max-width:1024px) {
     h1{
-        font-size: 65px;
+        font-size: 35px;
     }
 }
 
-@media (max-width:950px) {
+@media (max-width:768px) {
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:1024px) {
     h2{
-        font-size: 35px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width:768px) {
+    h2{
+        font-size: 20px;
     }
 }
 
@@ -31,16 +50,16 @@ header{
     justify-content: space-between;
     justify-content: space-between;
     align-items: center;
-    width: 150%;
+    /* width: 150%; */
 }
 
 .logo{
     cursor: pointer;
 }
 
-@media (max-width:950px) {
+@media (max-width:1024px) {
     .logo{
-        width: 300px;
+        width: 150px;
     }
 }
 
@@ -51,12 +70,21 @@ header a{
     font-size: 20px;
 }
 
-@media (max-width:950px){
+@media (max-width:1024px){
     header a{
         text-decoration: none;
         color: black;
         padding: 20px;
-        font-size: 30px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:768px){
+    header a{
+        text-decoration: none;
+        color: black;
+        padding: 15px;
+        font-size: 15px;
     }
 }
 
@@ -71,9 +99,17 @@ header a{
     max-width: 500px;
 }
 
-@media (max-width:950px){
+@media (max-width:1024px){
     .abus img{
-        max-width: 700px;
+        max-width: 400px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:768px){
+    .abus img{
+        max-width: 250px;
+        margin-top: 135px;
     }
 }
 
@@ -87,9 +123,22 @@ header a{
     margin-bottom: 100px;
 }
 
-@media (max-width:950px) {
+@media (max-width:768px){
+    .article{
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:768px) {
     .article p{
-        font-size: 25px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width:1024px) {
+    .article p{
+        font-size: 15px;
     }
 }
 
@@ -103,9 +152,15 @@ header a{
     max-width: 500px;
 }
 
-@media (max-width:950px) {
+@media (max-width:1024px) {
     .skills img{
-        max-width: 700px;
+        max-width: 400px;
+    }
+}
+
+@media (max-width:768px) {
+    .skills img{
+        max-width: 250px;
     }
 }
 
@@ -119,9 +174,16 @@ header a{
     margin-bottom: 100px;    
 }
 
-@media (max-width:950px) {
+@media (max-width:1024px) {
     .txt{
-        font-size: 25px; 
+        font-size: 15px; 
+    }
+}
+
+@media (max-width:768px) {
+    .txt{
+        font-size: 13px; 
+        margin-left: 50px;
     }
 }
 
@@ -135,9 +197,15 @@ header a{
     margin-top: 50px;
 }
 
-@media (max-width:950px) {
+@media (max-width:1024px) {
     .first img{
-        max-width: 700px;
+        max-width: 400px;
+    }
+}
+
+@media (max-width:768px) {
+    .first img{
+        max-width: 300px;
     }
 }
 
@@ -150,9 +218,21 @@ header a{
     margin-bottom: 100px;
 }
 
-@media (max-width:950px) {
+@media (max-width:1024px) {
     .text{
-        font-size: 25px; 
+        font-size: 15px; 
+    }
+    .text img{
+        max-width: 150px;
+    }
+}
+
+@media (max-width:768px) {
+    .text{
+        font-size: 13px; 
+    }
+    .text img{
+        max-width: 100px;
     }
 }
 
@@ -164,19 +244,32 @@ header a{
     max-width: 700px;
 }
 
-@media (max-width:950px) {
+@media (max-width:1024px) {
     .sec img{
-        max-width: 900px;
+        max-width: 500px;
+    }
+}
+
+@media (max-width:768px) {
+    .sec img{
+        max-width: 400px;
     }
 }
 
 .saul{
     text-align: center;
+    width: 500px;
 }
 
-@media (max-width:950px) {
+@media (max-width:1024px) {
     .saul{
-        font-size: 25px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .saul{
+        width: 350px;
     }
 }
 
@@ -188,6 +281,12 @@ header a{
     max-width: 300px;
 }
 
+@media (max-width:1024px){
+    .saul img{
+        max-width: 150px;
+    }
+}
+
 .third{
     background-color: rgb(95, 85, 160);
 }
@@ -197,20 +296,34 @@ header a{
     text-align: center;
 }
 
-@media (max-width:950px) {
+@media (max-width:1024px) {
     .tetx{
-        font-size: 25px;
+        font-size: 15px;
+        margin-left: 150px;
     }
 }
 
-@media (max-width:950px) {
+@media (max-width:1024px) {
     .tetx{
-        font-size: 35px;
+        font-size: 13px;
+        margin-left: 100px;
     }
 }
 
 .third img{
     max-width: 500px;
+}
+
+@media (max-width:1024px) {
+    .third img{
+        max-width: 300px;
+    }
+}
+
+@media (max-width:768px) {
+    .third img{
+        max-width: 200px;
+    }
 }
 
 .fourth{
@@ -221,9 +334,35 @@ header a{
     max-width: 600px;
 }
 
+@media (max-width:1024px) {
+    .fourth img{
+        max-width: 400px;
+    }
+}
+
+@media (max-width:768px) {
+    .fourth img{
+        max-width: 300px;
+    }
+}
+
 .tex{
     color: black;
     text-align: center;
+    width: 600px;
+}
+
+@media (max-width:1024px) {
+    .tex{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:1024px) {
+    .tex{
+        font-size: 13px;
+        width: 400px;
+    }
 }
 
 .first, .sec, .third, .fourth{
@@ -233,7 +372,6 @@ header a{
 }
 
 .contacts{
-    text-align: center;
     width: 158%;
     background-color: rgb(95, 85, 160);
     color: #fff;
@@ -241,6 +379,7 @@ header a{
 
 .contacts a{
     text-decoration: none;
+    color: aquamarine;
 }
 
 .contacts a:hover{
@@ -248,9 +387,15 @@ header a{
     text-decoration: underline;
 }
 
-@media (max-width:950px) {
+@media (max-width:1024px) {
     .contacts{
-        font-size: 35px;
+        font-size: 15px;
+    }
+    .contacts h1{
+        margin-left: 30%;
+    }
+    .contacts h2{
+        margin-left: -35%;
     }
 }
 
